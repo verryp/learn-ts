@@ -15,3 +15,7 @@ randomVal = "Types";
 randomVal = true;
 randomVal = [];
 randomVal = {};
+// ! Union type
+let phoneNumber;
+phoneNumber = 8215535;
+phoneNumber = "08215535";

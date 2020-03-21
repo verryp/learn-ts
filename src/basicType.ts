@@ -17,3 +17,8 @@ randomVal = "Types"
 randomVal = true
 randomVal = []
 randomVal = {}
+
+// ! Union type
+let phoneNumber: number | string
+phoneNumber = 8215535
+phoneNumber = "08215535"
