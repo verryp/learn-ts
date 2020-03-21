@@ -1,15 +1,15 @@
 "use strict";
 // ! String type
-var myName;
+let myName;
 myName = 'Verry P';
 // ! Number type
-var year;
+let year;
 year = 23;
 // ! Boolean type
-var isSingle;
+let isSingle;
 isSingle = true;
 // ! Any type
-var randomVal;
+let randomVal;
 randomVal = 23;
 randomVal = "Types";
 randomVal = true;

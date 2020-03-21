@@ -1,13 +1,13 @@
 "use strict";
 // ! Array data type
-var arrayNumber;
+let arrayNumber;
 arrayNumber = [1, 2, 2];
-var arrayString;
+let arrayString;
 arrayString = ["A", "B", "C"];
-var arrayRandomVal;
+let arrayRandomVal;
 arrayRandomVal = [1, "test", true, {
         "test": "banana"
     }];
 // Tuples
-var arrayNumberString;
+let arrayNumberString;
 arrayNumberString = ["String", 123];
