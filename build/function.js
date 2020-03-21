@@ -11,3 +11,9 @@ function getProfession() {
     console.log("I'm Web Developer");
 }
 getProfession();
+// ! default parameter
+const adding = (temp1, temp2) => temp1 + temp2;
+console.log(adding(1, 4));
+// ! option parameter
+const decided = (temp1, temp2) => temp1 / temp2;
+console.log(decided(4, 2));
