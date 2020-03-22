@@ -14,8 +14,8 @@ class User {
 }
 exports.User = User;
 class Admin extends User {
-    constructor() {
-        super(...arguments);
+    constructor(name, age, phone_number) {
+        super(name, age);
         this.read = true;
         this.write = true;
         this.getRole = () => {
@@ -24,9 +24,11 @@ class Admin extends User {
                 write: this.write
             };
         };
+        this.phone_number = phone_number;
     }
 }
-const admin = new Admin("Verryp", 22);
-admin.setName("Bambang");
+const admin = new Admin('Verryp', 22, '0821456489');
+admin.setName('Bambang');
 console.log(admin.getName());
 console.log(admin.getRole());
+console.log(admin);
