@@ -20,6 +20,7 @@ class Admin extends User {
     private read: boolean = true;
     private write: boolean = true;
     private phone_number: string;
+    private _username: string = '';
 
     constructor(name: string, age: number, phone_number: string) {
         super(name, age);
@@ -35,6 +36,14 @@ class Admin extends User {
             write: this.write
         };
     };
+
+    set username(value: string) {
+        this._username = value;
+    }
+
+    get username(): string {
+        return this._username;
+    }
 }
 
 const admin = new Admin('Verryp', 22, '0821456489');
@@ -44,3 +53,6 @@ console.log(admin.getName());
 console.log(admin.getRole());
 
 console.log(admin);
+
+admin.username = 'verryp';
+console.log(admin.username);
