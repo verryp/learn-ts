@@ -34,10 +34,13 @@ class Admin extends User {
         return this._username;
     }
 }
-const admin = new Admin('Verryp', 22, '0821456489');
+Admin.getRoleAdmin = 'Can access all data';
+let admin = new Admin('Verryp', 22, '0821456489');
 admin.setName('Bambang');
 console.log(admin.getName());
 console.log(admin.getRole());
 console.log(admin);
 admin.username = 'verryp';
 console.log(admin.username);
+let roleAdmin = Admin.getRoleAdmin;
+console.log(roleAdmin);

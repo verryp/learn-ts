@@ -21,6 +21,7 @@ class Admin extends User {
     private write: boolean = true;
     private phone_number: string;
     private _username: string = '';
+    static getRoleAdmin: string = 'Can access all data';
 
     constructor(name: string, age: number, phone_number: string) {
         super(name, age);
@@ -46,7 +47,7 @@ class Admin extends User {
     }
 }
 
-const admin = new Admin('Verryp', 22, '0821456489');
+let admin = new Admin('Verryp', 22, '0821456489');
 
 admin.setName('Bambang');
 console.log(admin.getName());
@@ -56,3 +57,6 @@ console.log(admin);
 
 admin.username = 'verryp';
 console.log(admin.username);
+
+let roleAdmin = Admin.getRoleAdmin;
+console.log(roleAdmin);
